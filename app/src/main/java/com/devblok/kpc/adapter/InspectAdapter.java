@@ -35,7 +35,7 @@ public class InspectAdapter extends RecyclerView.Adapter<InspectAdapter.ViewHold
 
     @Override
     public void onBindViewHolder(@NonNull InspectAdapter.ViewHolder holder, int position) {
-        holder.getMonthYear().setText("Осмотр запланирован на " + getMonth(inspects.get(position).getPlanDate()) + " " + (inspects.get(position).getPlanDate().getYear()+1900));
+        holder.getMonthYear().setText("Дедлайн " + getMonth(inspects.get(position).getPlanDate()) + " " + (inspects.get(position).getPlanDate().getYear()+1900));
         holder.getDate().setText(String.valueOf(inspects.get(position).getPlanDate().getDate()).toUpperCase());
         holder.getDay().setText(getDay(inspects.get(position).getPlanDate()).toUpperCase());
         holder.getAnimal().setText(inspects.get(position).getAnimal().getNickOrNumber().toUpperCase());

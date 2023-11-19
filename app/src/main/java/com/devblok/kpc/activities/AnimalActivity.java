@@ -172,22 +172,22 @@ public class AnimalActivity extends AppCompatActivity {
 
     protected String generateInfo(Bundle bundle) {
         StringBuilder stringBuilder = new StringBuilder();
-        stringBuilder.append("Вид животного - ");
+        stringBuilder.append("Тип Работы - ");
         stringBuilder.append(bundle.getString("type"));
         stringBuilder.append("\n");
-        stringBuilder.append("Пол - ");
+        stringBuilder.append("Учаток - ");
         stringBuilder.append(bundle.getString("sex"));
         stringBuilder.append("\n");
-        stringBuilder.append("Возраст - ");
+        stringBuilder.append("Кол-во работников - ");
         stringBuilder.append(bundle.getString("age"));
         stringBuilder.append("\n");
-        stringBuilder.append("Кличка или номер бирки - ");
-        stringBuilder.append(bundle.getString("nickOrNumber"));
-        stringBuilder.append("\n");
-        stringBuilder.append("Масть или приметы - ");
+        stringBuilder.append("Навесной агрегат - ");
         stringBuilder.append(bundle.getString("breed"));
         stringBuilder.append("\n");
-        stringBuilder.append("Название подразделения фермы (отделения) или ФИО владельца животного - ");
+        stringBuilder.append("Название задачи - ");
+        stringBuilder.append(bundle.getString("nickOrNumber"));
+        stringBuilder.append("\n");
+        stringBuilder.append("Описание задачи - ");
         stringBuilder.append(bundle.getString("owner"));
         return stringBuilder.toString();
     }

@@ -19,5 +19,5 @@
     <item
         android:id="@+id/animals"
         android:icon="@drawable/menu5_animal"
-        android:title="@string/menu_animals" />
+        android:title="Задачи" />
 </menu>
